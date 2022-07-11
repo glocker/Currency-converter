@@ -42,6 +42,8 @@ option {
 }
 
 .switch {
+    display: flex;
+    flex-direction: column;
     padding-top: 55px;
     margin: 20px;
     border-radius: 50%;
@@ -63,6 +65,16 @@ button {
     border-radius: 5px;
     background-color: #D3D3D3;
     cursor: pointer;
+}
+
+.convertButton {
+    margin-bottom: 10px;
+}
+
+.switchButton {
+    background-image: url("./icons/swap.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 p,h3, button, .switch {

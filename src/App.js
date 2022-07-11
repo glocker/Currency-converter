@@ -62,14 +62,21 @@ const App = () => {
                     </select>
                 </div>
                 <div className="switch">
-                    <button onClick={() => { flip() }}>
-                        Switch
+                    <button
+                        className="convertButton"
+                        onClick={()=>{convert()}}>
+                        Convert
+                    </button>
+                    <button
+                        className="switchButton"
+                        onClick={() => { flip() }}>
                     </button>
                 </div>
                 <div className="right">
                     <h3>I will receive</h3>
                     <input
                         type="text"
+                        value={output.toFixed(2)}
                         disabled>
                     </input>
                     <select
@@ -87,9 +94,6 @@ const App = () => {
                 </div>
             </div>
             <div className="result">
-                <button onClick={()=>{convert()}}>Convert</button>
-                <h2>Converted Amount:</h2>
-                <p>{input+" "+from+" = "+output.toFixed(2) + " " + to}</p>
 
             </div>
         </div>
