@@ -44,7 +44,7 @@ const App = () => {
         <div className="App">
             <div className="container">
                 <div className="left">
-                    <h3>I have</h3>
+                    <h3>I HAVE</h3>
                     <input type="text"
                            placeholder="Enter the amount"
                            onChange={(e) => setInput(e.target.value)} />
@@ -73,7 +73,7 @@ const App = () => {
                     </button>
                 </div>
                 <div className="right">
-                    <h3>I will receive</h3>
+                    <h3>I WILL RECEIVE</h3>
                     <input
                         type="text"
                         value={output.toFixed(2)}
@@ -92,9 +92,6 @@ const App = () => {
                         }) }
                     </select>
                 </div>
-            </div>
-            <div className="result">
-
             </div>
         </div>
     );
