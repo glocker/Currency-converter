@@ -44,24 +44,21 @@ const App = () => {
         <div className="App">
             <div className="container">
                 <div className="left">
-                    <h3>Amount</h3>
+                    <h3>I have</h3>
                     <input type="text"
                            placeholder="Enter the amount"
                            onChange={(e) => setInput(e.target.value)} />
-                </div>
-                <div className="middle">
-                    <h3>From</h3>
                     <select
-                            name="select"
-                            value={from}
-                            onChange={(e) => { setFrom(e.target.value) }}>
-                                { options.map(currency => {
-                                    return (<option
-                                        value={currency}
-                                        key={currency}>
-                                        {currency}
-                                    </option>)
-                                }) }
+                        name="select"
+                        value={from}
+                        onChange={(e) => { setFrom(e.target.value) }}>
+                        { options.map(currency => {
+                            return (<option
+                                value={currency}
+                                key={currency}>
+                                {currency}
+                            </option>)
+                        }) }
                     </select>
                 </div>
                 <div className="switch">
@@ -70,7 +67,11 @@ const App = () => {
                     </button>
                 </div>
                 <div className="right">
-                    <h3>To</h3>
+                    <h3>I will receive</h3>
+                    <input
+                        type="text"
+                        disabled>
+                    </input>
                     <select
                         name="select"
                         value={to}
