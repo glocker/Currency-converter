@@ -60,15 +60,15 @@ button {
 
 .convertButton {
     margin-bottom: 10px;
-    color: #e0bf3b;
-    background-color: dimgrey;
+    color: #ff2137;
+    background-color: lightgrey;
 }
 
 .switchButton {
     background-image: url("./icons/swap.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #e0bf3b;
+    background-color: #ff2137;
 }
 
 p, h3 {
